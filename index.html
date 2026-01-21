@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rick Rubin — Reduced</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0a0a'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-family='Playfair Display, Georgia, serif' font-size='22' font-weight='400' fill='%23e8e4dc'%3ER%3C/text%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <!-- Fathom - beautiful, simple website analytics -->
+    <script src="https://cdn.usefathom.com/script.js" data-site="TWQNGKMP" defer></script>
+    <!-- / Fathom -->
     <style>
         * {
             margin: 0;
@@ -288,13 +292,20 @@
     </main>
 
     <footer>
-        Data sourced from Wikipedia · Spotify links may vary by region
+        <p style="margin-bottom: 1rem;">Data sourced from Wikipedia · Spotify links may vary by region</p>
+        <p style="display: flex; align-items: center; justify-content: center; gap: 0.25rem;">
+            <span>made by</span>
+            <a href="https://luskira.com" style="display: flex; align-items: center; gap: 0.25rem; color: var(--text); text-decoration: none; transition: opacity 0.2s;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">
+                <span style="text-decoration: underline;">luskira</span>
+                <img src="https://lucas-schiavini.com/content/images/size/w320/2025/03/New-pfp--2--1.png" alt="luskira" style="width: 24px; height: 24px; border-radius: 50%;">
+            </a>
+        </p>
     </footer>
 
     <script>
 const albums = [
-    { year: 1981, artist: "The Pricks", title: "The Pricks", genre: "Punk", spotify: "https://open.spotify.com/search/The%20Pricks" },
-    { year: 1983, artist: "Hose", title: "Hose", genre: "Punk", spotify: "https://open.spotify.com/search/Hose%20band" },
+    { year: 1981, artist: "The Pricks", title: "The Pricks", genre: "Punk", spotify: "https://www.youtube.com/results?search_query=The+Pricks+1981+Rick+Rubin", isYoutube: true },
+    { year: 1983, artist: "Hose", title: "Hose", genre: "Punk", spotify: "https://www.youtube.com/results?search_query=Hose+band+1983+album", isYoutube: true },
     { year: 1984, artist: "T La Rock & Jazzy Jay", title: "It's Yours", genre: "Hip-Hop", spotify: "https://open.spotify.com/search/T%20La%20Rock%20It's%20Yours" },
     { year: 1984, artist: "LL Cool J", title: "I Need a Beat", genre: "Hip-Hop", spotify: "https://open.spotify.com/search/LL%20Cool%20J%20I%20Need%20a%20Beat" },
     { year: 1985, artist: "LL Cool J", title: "Radio", genre: "Hip-Hop", spotify: "https://open.spotify.com/album/4wtLtiM2bMyFqwwvfpPmqU" },
@@ -314,12 +325,12 @@ const albums = [
     { year: 1990, artist: "Danzig", title: "Danzig II: Lucifuge", genre: "Metal", spotify: "https://open.spotify.com/album/6nlMpHy3k9q4MwQ6j2aeXv" },
     { year: 1990, artist: "Slayer", title: "Seasons in the Abyss", genre: "Metal", spotify: "https://open.spotify.com/album/5ObXXLEaw2TOaEZLlXnuIS" },
     { year: 1990, artist: "Geto Boys", title: "The Geto Boys", genre: "Hip-Hop", spotify: "https://open.spotify.com/album/4PFZfzkx9lmRQf5Tit85hz" },
-    { year: 1990, artist: "Trouble", title: "Trouble", genre: "Metal", spotify: "https://open.spotify.com/search/Trouble%20band%201990" },
+    { year: 1990, artist: "Trouble", title: "Trouble", genre: "Metal", spotify: "https://www.youtube.com/results?search_query=Trouble+band+1990+self+titled+album", isYoutube: true },
     { year: 1991, artist: "Red Hot Chili Peppers", title: "Blood Sugar Sex Magik", genre: "Rock", spotify: "https://open.spotify.com/album/30Perjew8HyGkdSmqguYyg" },
     { year: 1991, artist: "The Four Horsemen", title: "Nobody Said It Was Easy", genre: "Rock", spotify: "https://open.spotify.com/search/Four%20Horsemen%20Nobody%20Said" },
     { year: 1992, artist: "Sir Mix-a-Lot", title: "Mack Daddy", genre: "Hip-Hop", spotify: "https://open.spotify.com/album/3yZeTwkrPN6agPNzApHItH" },
     { year: 1992, artist: "Danzig", title: "Danzig III: How the Gods Kill", genre: "Metal", spotify: "https://open.spotify.com/album/3WzKC3AbkS2Hd4SJ1kZpQR" },
-    { year: 1992, artist: "The Red Devils", title: "King King", genre: "Blues", spotify: "https://open.spotify.com/search/Red%20Devils%20King%20King" },
+    { year: 1992, artist: "The Red Devils", title: "King King", genre: "Blues", spotify: "https://www.youtube.com/results?search_query=The+Red+Devils+King+King+album", isYoutube: true },
     { year: 1993, artist: "Mick Jagger", title: "Wandering Spirit", genre: "Rock", spotify: "https://open.spotify.com/album/4KGrHFzDe8CqscCKZPnJLg" },
     { year: 1993, artist: "Tom Petty", title: "Greatest Hits", genre: "Rock", spotify: "https://open.spotify.com/album/5e5cbbxfWuMvUksxmqT7Q5" },
     { year: 1994, artist: "Johnny Cash", title: "American Recordings", genre: "Country", spotify: "https://open.spotify.com/album/5nKjJSoS3Ng9xZKhXYJKzL" },
@@ -371,7 +382,7 @@ const albums = [
     { year: 2006, artist: "U2", title: "U218 Singles", genre: "Rock", spotify: "https://open.spotify.com/album/1KqUCsTqavYgHYz1XDfX2k" },
     { year: 2007, artist: "Linkin Park", title: "Minutes to Midnight", genre: "Rock", spotify: "https://open.spotify.com/album/2tlTBLz2w52rpGCLBGyGw6" },
     { year: 2007, artist: "Coheed and Cambria", title: "Good Apollo Vol. 2: No World for Tomorrow", genre: "Rock", spotify: "https://open.spotify.com/album/4P5KIUDXjlOQmPNQSqdSLf" },
-    { year: 2007, artist: "Gossip", title: "Live in Liverpool", genre: "Rock", spotify: "https://open.spotify.com/search/Gossip%20Live%20Liverpool" },
+    { year: 2007, artist: "Gossip", title: "Live in Liverpool", genre: "Rock", spotify: "https://www.youtube.com/results?search_query=Gossip+Live+in+Liverpool+2007", isYoutube: true },
     { year: 2008, artist: "Metallica", title: "Death Magnetic", genre: "Metal", spotify: "https://open.spotify.com/album/2yVPdkhapc4CcLpXwTWqZv" },
     { year: 2008, artist: "Neil Diamond", title: "Home Before Dark", genre: "Rock", spotify: "https://open.spotify.com/album/4JeNEBHWXlWJHmVCz4ABRK" },
     { year: 2008, artist: "Weezer", title: "Weezer (Red Album)", genre: "Rock", spotify: "https://open.spotify.com/album/4A3ShGgHPzUTPe7tJlN1tX" },
@@ -481,8 +492,9 @@ function render() {
             <div class="album-title">${album.title}</div>
             <div class="album-genre">${album.genre}</div>
             <a href="${album.spotify}" target="_blank" rel="noopener" class="spotify-link">
-                <svg viewBox="0 0 24 24"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
-                Listen on Spotify
+                ${album.isYoutube ? `<svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                Watch on YouTube` : `<svg viewBox="0 0 24 24"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+                Listen on Spotify`}
             </a>
         `;
         grid.appendChild(card);
